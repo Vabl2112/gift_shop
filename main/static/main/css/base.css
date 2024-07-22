@@ -1,0 +1,399 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Roboto:wght@300;400&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1, h2, h3, h4, h5 , h6 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration:none;
+    color:#5993bb;
+}
+
+a:hover {
+    color:#77b6e2;
+}
+
+.text-left {
+    text-align:left;
+}
+
+.text-right {
+    text-align:right;
+}
+
+#header {
+    overflow:auto;
+    width: 90%;
+    margin: 3px auto;
+    border-bottom: 2px solid;
+}
+
+
+#header .logo {
+    font-family: 'EB Garamond', serif;
+    float:left;
+    color:#000000;
+    font-size:48px;
+    margin-left:3%;
+}
+
+#header .navigation {
+    float:left;
+    display: inline-flex;
+    color:#000000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+#footer {
+    width: 90%;
+    overflow:auto;
+    border-top: 2px solid;
+    margin: 0% auto;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#footer .navigation {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-flex;
+    color: #656565;
+}
+
+#footer .sign {
+    font-size: 15px;
+    margin: 0% auto;
+    display: block;
+}
+
+#content {
+    flex-grow: 1;
+    width: 90%;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+#content .octa{
+    margin: 60px auto;
+}
+
+#content .octa img{
+    max-height:200px;
+    max-width:200px;
+    margin-left: 4%;
+
+}
+
+#content .description{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 27px;
+    width: 80%;
+    border: 2px solid;
+    margin: 60px auto;
+    padding: 1% 1%;
+}
+
+#content #cart{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    width: 60%;
+    border: 2px solid;
+    margin: 15% auto;
+    padding: 1% 1%;
+}
+
+#content #cart a{
+    color: #000000;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+#content #info{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    width: 60%;
+    border: 2px solid;
+    margin: 5% auto;
+    padding: 1% 1%;
+}
+
+#content #delivery{
+    width:60%;
+    border: 2px solid #000000;
+    margin: 4% auto;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#content #delivery td{
+    border: 2px solid #000000;
+}
+
+#sidebar {
+    width: 16%;
+    padding-top: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
+    float:left;
+}
+
+#sidebar h3{
+    font-size: 35px;
+}
+
+#sidebar ul{
+    font-size: 20px;
+    margin:0;
+    padding:0;
+}
+
+#sidebar ul li {
+    margin:0;
+    list-style:none;
+    padding:7px 14px;
+}
+
+#sidebar ul li a {
+    color: #000000;
+    display:block;
+}
+
+#sidebar ul li.selected {
+    border: 2px solid;
+}
+
+#sidebar ul li.selected a {
+    color:#000000;
+}
+
+#main {
+    float:left;
+    width: 68%;
+    overflow:hidden;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.category h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 1% 1%;
+    padding: 1% 1%;
+    border: 2px solid;
+}
+
+.category h1 a{
+    color: #000000;
+}
+
+.product-list .item {
+    margin: 1% 1%;
+    width:23%;
+    height: 40vh;
+
+    float:left;
+    text-align:center;
+    border: 2px solid;
+}
+
+.product-list .item a{
+    color: #000000;
+}
+
+.product-list .item img {
+    width:90%;
+    height: 75%;
+    margin:5%;
+    border: 2px solid;
+}
+
+.product-detail {
+    float:left;
+    width: 68%;
+    overflow:hidden;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align:justify;
+}
+
+.product-detail .picture{
+    margin-top: 2%;
+    margin-left: 1%;
+    width:50%;
+    height:70vh;
+
+    float:left;
+    text-align:center;
+    border: 2px solid;
+}
+
+.product-detail img {
+    margin: 6% 2% 2% 2%;
+    width:96%;
+    border: 2px solid;
+}
+
+.product-detail h1 {
+    margin-bottom:0;
+}
+
+.product-detail .articles{
+    margin-top: 2%;
+    width:48%;
+    height:70vh;
+    float:left;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.product-detail .articles .price {
+    padding:0% 4%;
+    color:#000000;
+    font-size:32px;
+    border-bottom: 2px solid;
+}
+
+.product-detail .articles h2{
+    font-size: 40px;
+    padding-top: 0.5%;
+    padding-left: 4%;
+}
+
+.product-detail .articles p{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    color:#000000;
+    font-size:25px;
+}
+
+.unlimited{
+    margin: 4% auto;
+    width: 68%;
+    overflow:hidden;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    text-align:justify;
+    border: solid 2px;
+    padding: 2% 2%;
+    text-align: center;
+}
+
+.unlimited label{font-size:36px;}
+
+.unlimited .parameters{
+    width: 25%;
+    float: left;
+}
+
+.unlimited .category{
+    margin: 8% 8%;
+    padding: 8% 8%;
+    border: solid 2px;
+}
+
+
+
+.dop{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    text-align:justify;
+}
+
+.dop h2{
+    font-size: 24px;
+    border: solid 2px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    padding:2% 2%;
+    text-align: center;
+}
+
+.dop textarea{
+    margin-top: 0%;
+    border-left: solid 2px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+    padding: 2% 2%;
+    text-align: center;
+    resize: none;
+    width: 100%;
+    height: 22.5vh;
+    float: left;
+}
+.dop input{
+    border-radius: 0px;
+    margin: 2% 0%;
+    border: solid 2px;
+    width: 40%;
+    float:left;
+    padding: 1% 1%;
+}
+
+.dop button{
+    font-size: 26px;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding: 0.25% 1.25%;
+    background: white;
+}
+
+.dop .message{
+    text-align: center;
+    height: 8vh;
+    padding: 0.25% 1%;
+    font-size: 20px;
+    float: left;
+    width: 100%;
+    margin-top: 0%;
+    border: solid 2px;
+}
+
+

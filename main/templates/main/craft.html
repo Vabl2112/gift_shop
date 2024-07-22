@@ -1,0 +1,21 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %}
+    Мастерская
+{% endblock %}
+{% block content %}
+    {% load static %}
+    <script type="text/javascript" src={% static "main/js/function.js" %}></script>
+    <div class="unlimited">
+        <div class="dop">
+            <h2>Вы можете создать уникальный подарочный набор, полностью отражающий ваши пожелания и предпочтения. Просто опишите, какой подарок вы хотели бы собрать, и мы сделаем его реальностью для вас или вашего близкого. <br>Создайте незабываемый подарок с личным прикосновением прямо сейчас!</h2>
+            <p><textarea name="comment"></textarea></p>
+            <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+            <input type="tel" class="form-control" id="phone" placeholder="Ваш номер телефона" style="margin-left: 2%;">
+            <button type="button" class="" onclick="message()">Отправить</button>
+            <div class="message">
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

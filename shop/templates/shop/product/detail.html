@@ -1,0 +1,34 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.title }}{% else %}KunTiK{% endif %}
+{% endblock %}
+{% block content %}
+    <div id="sidebar">
+        <h3>Категории</h3>
+        <ul>
+            <li {% if not category %}class="selected"{% endif %}>
+                <a href="{% url 'shop:product_list' %}">Смотреть всё</a>
+            </li>
+            {% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="product-detail">
+        <div class="category">
+        <h1><a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></h1>
+        </div>
+        <div class="picture">
+        <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'main/img/no_image.png' %}{% endif %}">
+        </div>
+        <div class="articles">
+        <h2>{{ product.name }}</h2>
+        <p class="price">{{ product.price }}₽</p>
+        <p>Артикул: 1000{{ product.id }}</p>
+        <p class="signature">{{ product.description|linebreaks }}</p>
+        </div>
+    </div>
+{% endblock %}
